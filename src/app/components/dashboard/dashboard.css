@@ -1,0 +1,20 @@
+
+/* Total Expenses = blue outline + blue text */
+.card.blue-card {
+    border: 1px solid #1f6cff;
+}
+
+.card.black-card .card-title,
+.card.blue-card .card-text {
+    color: #1f6cff !important;
+}
+
+/* Other cards = green outline + green text */
+.card.green-card {
+    border: 1px solid #2a8f3f;
+}
+
+.card.black-card .card-title,
+.card.green-card .card-text {
+    color: #2a8f3f !important;
+}

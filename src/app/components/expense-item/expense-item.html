@@ -1,0 +1,11 @@
+<div 
+  class="list-group-item d-flex justify-content-between align-items-center"
+  [ngClass]="{'bg-light':expense.amount > 100}"></div>
+  <div>
+    <h5>{{ expense.title }}</h5>
+    <p class="mb-0">${{ expense.amount }} * {{ expense.category }}</p>
+  <div>
+    <button class="btn btn-danger btn-sm" (click)="deleteExpense()">Delete</button>
+    <button class="btn btn-primary btn-sm" [routerLink]="['/edit', expense.id]">Edit</button>
+  </div>
+</div>  
